@@ -365,17 +365,43 @@ img { max-width: 100%; display: block; }
 .faq-item[open] summary::after { transform: rotate(45deg); }
 .faq-item p { color: var(--color-muted); font-size: 15px; padding-bottom: 18px; }
 
-/* Reviews grid */
+/* Reviews grid — speech-bubble shape (intentional organic exception to the 8px radius rule) */
 .section-head.center { max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; }
-.review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 26px 28px; }
 .review-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 6px;
+  border-radius: 20px 20px 20px 4px;
   padding: 28px;
+  position: relative;
+  margin-bottom: 22px;
 }
 .review-card p { font-family: var(--font-head); font-style: italic; font-size: 16px; line-height: 1.55; margin-bottom: 14px; }
 .review-card cite { font-style: normal; font-size: 13px; color: var(--color-muted); }
+
+/* Speech-bubble tail, built from two stacked CSS triangles (border-color outline + surface-color fill) */
+.review-card::before {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 15px solid var(--color-border);
+}
+.review-card::after {
+  content: '';
+  position: absolute;
+  bottom: -13px;
+  left: 32px;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 13px solid var(--color-surface);
+}
 
 .img-fallback {
   background: linear-gradient(135deg, #efe6df 0%, #e3d5c9 100%);
@@ -471,6 +497,58 @@ blockquote cite {
   font-style: normal;
   font-size: 14px;
   color: var(--color-muted);
+}
+
+/* Impressionen — polaroid photo frames (intentional organic exception to the 8px radius rule) */
+.polaroid-section { background: var(--color-bg); }
+
+.polaroid-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 44px 30px;
+  padding-top: 10px;
+}
+
+.polaroid {
+  background: #ffffff;
+  width: 216px;
+  padding: 14px 14px 10px;
+  box-shadow: 0 16px 30px -14px rgba(42, 32, 32, 0.32);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid-1 { transform: rotate(-3deg); }
+.polaroid-2 { transform: rotate(2deg); }
+.polaroid-3 { transform: rotate(-2deg); }
+.polaroid-4 { transform: rotate(3deg); }
+.polaroid-5 { transform: rotate(-2.5deg); }
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 24px 42px -16px rgba(42, 32, 32, 0.36);
+  z-index: 5;
+}
+
+.polaroid-photo {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.polaroid-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+.polaroid figcaption {
+  font-family: 'Caveat', cursive;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-accent-dark);
+  text-align: center;
+  padding: 14px 4px 6px;
 }
 
 /* CTA band */
