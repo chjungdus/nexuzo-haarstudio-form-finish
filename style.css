@@ -3,12 +3,12 @@
 :root {
   --color-bg: #ffffff;
   --color-surface: #ffffff;
-  --color-accent: #111111;
-  --color-accent-dark: #000000;
+  --color-accent: #000000;
+  --color-accent-dark: #333333;
   --color-rose: #9a9a9a;
   --color-warm: #f4f4f4;
-  --color-dark: #111111;
-  --color-text: #111111;
+  --color-dark: #000000;
+  --color-text: #0a0a0a;
   --color-muted: #5f5f5f;
   --color-border: #e2e2e2;
   --font-head: 'Playfair Display', serif;
@@ -237,7 +237,7 @@ img { max-width: 100%; display: block; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(37,37,37, 0.82) 0%, rgba(37,37,37, 0.6) 50%, rgba(37,37,37, 0.25) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0, 0.82) 0%, rgba(0,0,0, 0.6) 50%, rgba(0,0,0, 0.25) 100%);
 }
 
 .hero-content { position: relative; max-width: 620px; }
@@ -254,8 +254,9 @@ img { max-width: 100%; display: block; }
 
 /* ÖFFNUNGSZEITEN WIDGET */
 .opening-widget {
-  background: var(--color-warm);
-  border-bottom: 1px solid var(--color-border);
+  background: #000;
+  color: #fff;
+  border-bottom: 1px solid #222;
 }
 
 .opening-widget-inner {
@@ -289,7 +290,7 @@ img { max-width: 100%; display: block; }
 
 .opening-hours-today {
   font-size: 14px;
-  color: var(--color-muted);
+  color: #bdbdbd;
 }
 
 /* USP bar */
@@ -668,7 +669,7 @@ img { max-width: 100%; display: block; }
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(37,37,37,0.45);
+  background: rgba(0,0,0,0.45);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1477,7 +1478,7 @@ blockquote cite {
   }
 
   .hero { min-height: 82vh; padding-top: 80px; padding-bottom: 72px; }
-  .hero-media::after { background: linear-gradient(180deg, rgba(37,37,37, 0.55) 0%, rgba(37,37,37, 0.78) 100%); }
+  .hero-media::after { background: linear-gradient(180deg, rgba(0,0,0, 0.55) 0%, rgba(0,0,0, 0.78) 100%); }
   h1 { font-size: 42px; }
   .hero-content h1 { font-size: 44px; }
 
@@ -1584,3 +1585,18 @@ body {
   background-repeat: repeat;
   background-size: 30px 30px;
 }
+
+/* Schwarzer Header */
+.site-header { background: rgba(0, 0, 0, 0.94); border-bottom-color: #222; }
+.site-header .logo,
+.site-header .logo span,
+.site-header .main-nav a { color: #fff; }
+.site-header .main-nav a:hover { color: #bdbdbd; }
+.site-header .nav-toggle span { background: #fff; }
+.site-header .nav-cta { background: #fff; color: #000; }
+.site-header .nav-cta:hover { background: #e2e2e2; }
+@media (max-width: 900px) {
+  .site-header .main-nav.open { background: #000; border-bottom-color: #222; }
+}
+.hero .btn-primary { background: #fff; color: #000; }
+.hero .btn-primary:hover { background: #e2e2e2; }
