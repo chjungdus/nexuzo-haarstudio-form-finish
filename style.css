@@ -214,41 +214,42 @@ img { max-width: 100%; display: block; }
 .scroll-top svg { width: 20px; height: 20px; }
 .scroll-top:hover { background: var(--color-accent); }
 
-/* Hero */
+/* Hero: Salonfoto als vollflaechiger Hintergrund */
 .hero {
   position: relative;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 110px 24px 90px;
+  display: flex;
+  align-items: center;
+  min-height: 88vh;
+  padding: 120px max(24px, calc((100% - 1140px) / 2 + 24px)) 100px;
   overflow: hidden;
+  background: var(--color-dark);
+  color: #fff;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-  gap: 56px;
-  align-items: center;
+.hero-media {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 60% center; display: block; }
+
+.hero-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(45, 34, 32, 0.82) 0%, rgba(45, 34, 32, 0.6) 50%, rgba(45, 34, 32, 0.25) 100%);
 }
 
 .hero-content { position: relative; max-width: 620px; }
 
-.hero-media {
-  position: relative;
-  border-radius: 6px;
-  overflow: hidden;
-  aspect-ratio: 4 / 5;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 30px 60px -25px rgba(42, 32, 32, 0.25);
-}
+.hero .eyebrow { color: #e8d9cf; }
+.hero h1 { color: #fff; }
 
-.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 55% center; display: block; }
-
-.hero-lede { font-size: 19px; color: var(--color-muted); margin: 20px 0 30px; max-width: 540px; }
+.hero-lede { font-size: 19px; color: rgba(255, 255, 255, 0.88); margin: 20px 0 30px; max-width: 540px; }
 
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 30px; }
 
-.hero-meta { font-size: 14px; color: var(--color-muted); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.hero-meta { font-size: 14px; color: rgba(255, 255, 255, 0.8); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .hero-meta .dot { opacity: 0.6; }
 
 /* ÖFFNUNGSZEITEN WIDGET */
@@ -1475,8 +1476,8 @@ blockquote cite {
     gap: 18px;
   }
 
-  .hero { padding-top: 60px; grid-template-columns: 1fr; gap: 40px; }
-  .hero-media { aspect-ratio: 4 / 3; }
+  .hero { min-height: 82vh; padding-top: 80px; padding-bottom: 72px; }
+  .hero-media::after { background: linear-gradient(180deg, rgba(45, 34, 32, 0.55) 0%, rgba(45, 34, 32, 0.78) 100%); }
   h1 { font-size: 42px; }
   .hero-content h1 { font-size: 44px; }
 
@@ -1566,13 +1567,6 @@ body {
   background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2730%27%20height%3D%2730%27%20viewBox%3D%270%200%2030%2030%27%3E%3Ccircle%20cx%3D%276.6%27%20cy%3D%274.1%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2715.6%27%20cy%3D%277.9%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%278.4%27%20cy%3D%2723.2%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2727.1%27%20cy%3D%2723.8%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3C%2Fsvg%3E);
   background-repeat: repeat;
   background-size: 30px 30px;
-}
-
-/* Hero: fliessende Haarstraehnen-Linien (abstrakt, kein Icon) */
-.hero {
-  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27230%27%20height%3D%27230%27%20viewBox%3D%270%200%20230%20230%27%3E%3Cg%20transform%3D%27translate%2864.4%2C69.0%29%20rotate%28-8%29%20scale%281.0%29%27%20fill%3D%27none%27%20stroke%3D%27%238b6f5c%27%20stroke-opacity%3D%270.11%27%20stroke-width%3D%272.0%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M%20-20%20-20%20Q%200%20-24%204%20-4%20Q%208%2014%20-14%2022%27%2F%3E%3Cpath%20d%3D%27M%206%20-22%20Q%2022%20-16%2018%200%20Q%2014%2018%20-2%2024%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28174.8%2C165.6%29%20rotate%2818%29%20scale%280.8%29%27%20fill%3D%27none%27%20stroke%3D%27%238b6f5c%27%20stroke-opacity%3D%270.11%27%20stroke-width%3D%272.0%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M%20-20%20-20%20Q%200%20-24%204%20-4%20Q%208%2014%20-14%2022%27%2F%3E%3Cpath%20d%3D%27M%206%20-22%20Q%2022%20-16%2018%200%20Q%2014%2018%20-2%2024%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
-  background-repeat: repeat;
-  background-size: 230px 230px;
 }
 
 /* USP-Leiste: Schere + Kamm, dezent */
