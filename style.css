@@ -1,16 +1,16 @@
 /* Form & Finish — Friseursalon Düsseldorf-Unterbilk */
 
 :root {
-  --color-bg: #fdf8f5;
+  --color-bg: #ffffff;
   --color-surface: #ffffff;
-  --color-accent: #8b6f5c;
-  --color-accent-dark: #6f5748;
-  --color-rose: #c9a9a6;
-  --color-warm: #f5f0eb;
-  --color-dark: #2d2220;
-  --color-text: #2a2020;
-  --color-muted: #86766f;
-  --color-border: #e8ddd8;
+  --color-accent: #111111;
+  --color-accent-dark: #000000;
+  --color-rose: #9a9a9a;
+  --color-warm: #f4f4f4;
+  --color-dark: #111111;
+  --color-text: #111111;
+  --color-muted: #5f5f5f;
+  --color-border: #e2e2e2;
   --font-head: 'Playfair Display', serif;
   --font-body: 'Lato', sans-serif;
 }
@@ -50,7 +50,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 10px;
 }
 
-.eyebrow-invert { color: #e8d9cf; }
+.eyebrow-invert { color: #dcdcdc; }
 
 .section {
   max-width: 1140px;
@@ -81,7 +81,7 @@ img { max-width: 100%; display: block; }
 .btn-outline:hover { border-color: var(--color-accent); color: var(--color-accent); }
 
 .btn-light { background: #fff; color: var(--color-accent-dark); }
-.btn-light:hover { background: #f2ece7; }
+.btn-light:hover { background: #ededed; }
 
 .btn-outline-light { border-color: rgba(255,255,255,0.5); color: #fff; background: transparent; }
 .btn-outline-light:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
@@ -93,7 +93,7 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(253, 248, 245, 0.92);
+  background: rgba(249,249,249, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--color-border);
 }
@@ -177,7 +177,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
   border-radius: 6px 0 0 6px;
-  box-shadow: -4px 0 20px rgba(42,32,32,0.2);
+  box-shadow: -4px 0 20px rgba(35,35,35,0.2);
   transition: background 0.2s ease;
 }
 
@@ -237,19 +237,19 @@ img { max-width: 100%; display: block; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(45, 34, 32, 0.82) 0%, rgba(45, 34, 32, 0.6) 50%, rgba(45, 34, 32, 0.25) 100%);
+  background: linear-gradient(90deg, rgba(37,37,37, 0.82) 0%, rgba(37,37,37, 0.6) 50%, rgba(37,37,37, 0.25) 100%);
 }
 
 .hero-content { position: relative; max-width: 620px; }
 
-.hero .eyebrow { color: #e8d9cf; }
+.hero .eyebrow { color: #dcdcdc; }
 .hero h1 { color: #fff; }
 
-.hero-lede { font-size: 19px; color: rgba(255, 255, 255, 0.88); margin: 20px 0 30px; max-width: 540px; }
+.hero-lede { font-size: 19px; color: rgba(255,255,255, 0.88); margin: 20px 0 30px; max-width: 540px; }
 
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 30px; }
 
-.hero-meta { font-size: 14px; color: rgba(255, 255, 255, 0.8); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.hero-meta { font-size: 14px; color: rgba(255,255,255, 0.8); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .hero-meta .dot { opacity: 0.6; }
 
 /* ÖFFNUNGSZEITEN WIDGET */
@@ -357,7 +357,7 @@ img { max-width: 100%; display: block; }
 .blob-media {
   border-radius: 62% 38% 55% 45% / 45% 48% 52% 55%;
   border: none;
-  box-shadow: 0 30px 60px -25px rgba(42, 32, 32, 0.25);
+  box-shadow: 0 30px 60px -25px rgba(35,35,35, 0.25);
   aspect-ratio: 1 / 1;
 }
 .blob-media::after { border-radius: inherit; }
@@ -371,7 +371,7 @@ img { max-width: 100%; display: block; }
   width: 420px;
   height: 420px;
   border-radius: 60% 40% 48% 52% / 52% 45% 55% 48%;
-  background: linear-gradient(135deg, rgba(139,111,92,0.10), rgba(139,111,92,0.02));
+  background: linear-gradient(135deg, rgba(117,117,117,0.10), rgba(117,117,117,0.02));
   pointer-events: none;
 }
 
@@ -411,7 +411,7 @@ img { max-width: 100%; display: block; }
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 50%, rgba(201,169,166,0.12) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 70% 50%, rgba(178,178,178,0.12) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -420,8 +420,8 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle at 15% 20%, rgba(201,169,166,0.07) 0%, transparent 35%),
-    radial-gradient(circle at 85% 80%, rgba(201,169,166,0.06) 0%, transparent 30%);
+    radial-gradient(circle at 15% 20%, rgba(178,178,178,0.07) 0%, transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(178,178,178,0.06) 0%, transparent 30%);
   pointer-events: none;
 }
 
@@ -438,7 +438,7 @@ img { max-width: 100%; display: block; }
   font-size: clamp(30px, 5vw, 52px);
   font-weight: 600;
   font-style: italic;
-  color: #f5ede9;
+  color: #efefef;
   line-height: 1.25;
   margin: 16px 0 28px;
 }
@@ -455,7 +455,7 @@ img { max-width: 100%; display: block; }
 
 .philosophy-sub {
   font-size: 16px;
-  color: rgba(245,240,235,0.65);
+  color: rgba(241,241,241,0.65);
   max-width: 560px;
   margin: 0 auto;
   line-height: 1.7;
@@ -668,7 +668,7 @@ img { max-width: 100%; display: block; }
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(45,34,32,0.45);
+  background: rgba(37,37,37,0.45);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -693,7 +693,7 @@ img { max-width: 100%; display: block; }
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(18,10,8,0.94);
+  background: rgba(12,12,12,0.94);
   z-index: 500;
   display: flex;
   align-items: center;
@@ -869,7 +869,7 @@ img { max-width: 100%; display: block; }
   width: 340px;
   height: 340px;
   border-radius: 60% 40% 55% 45% / 50% 50% 50% 50%;
-  background: rgba(201,169,166,0.12);
+  background: rgba(178,178,178,0.12);
   pointer-events: none;
 }
 
@@ -940,7 +940,7 @@ img { max-width: 100%; display: block; }
 
 .quiz-option.selected {
   border-color: var(--color-accent);
-  background: rgba(139,111,92,0.08);
+  background: rgba(117,117,117,0.08);
   color: var(--color-accent-dark);
   font-weight: 700;
 }
@@ -1084,7 +1084,7 @@ img { max-width: 100%; display: block; }
 .form-group textarea:focus,
 .form-group select:focus {
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(139,111,92,0.1);
+  box-shadow: 0 0 0 3px rgba(117,117,117,0.1);
 }
 
 .form-group textarea { resize: vertical; min-height: 110px; }
@@ -1279,7 +1279,7 @@ img { max-width: 100%; display: block; }
 
 /* Img fallback */
 .img-fallback {
-  background: linear-gradient(135deg, #efe6df 0%, #e3d5c9 100%);
+  background: linear-gradient(135deg, #e8e8e8 0%, #d8d8d8 100%);
 }
 .img-fallback img { opacity: 0; }
 .img-fallback::after {
@@ -1287,8 +1287,8 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background-image:
-    radial-gradient(circle at 30% 30%, rgba(139,111,92,0.18) 0, transparent 45%),
-    radial-gradient(circle at 75% 70%, rgba(139,111,92,0.14) 0, transparent 40%);
+    radial-gradient(circle at 30% 30%, rgba(117,117,117,0.18) 0, transparent 45%),
+    radial-gradient(circle at 75% 70%, rgba(117,117,117,0.14) 0, transparent 40%);
 }
 
 /* Impressionen — polaroid photo frames */
@@ -1306,7 +1306,7 @@ img { max-width: 100%; display: block; }
   background: #ffffff;
   width: 216px;
   padding: 14px 14px 10px;
-  box-shadow: 0 16px 30px -14px rgba(42, 32, 32, 0.32);
+  box-shadow: 0 16px 30px -14px rgba(35,35,35, 0.32);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1319,7 +1319,7 @@ img { max-width: 100%; display: block; }
 
 .polaroid:hover {
   transform: rotate(0deg) scale(1.05);
-  box-shadow: 0 24px 42px -16px rgba(42, 32, 32, 0.36);
+  box-shadow: 0 24px 42px -16px rgba(35,35,35, 0.36);
   z-index: 5;
 }
 
@@ -1358,17 +1358,17 @@ img { max-width: 100%; display: block; }
 }
 
 .cta-inner h2 { color: #fff; }
-.cta-inner p { color: #e8d9cf; margin-top: 6px; }
+.cta-inner p { color: #dcdcdc; margin-top: 6px; }
 
 .cta-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
-.cta-address { color: #e8d9cf; font-size: 14px; }
+.cta-address { color: #dcdcdc; font-size: 14px; }
 
 /* Map */
 .map-section { line-height: 0; }
 .map-section iframe { width: 100%; height: 380px; border: 0; filter: grayscale(15%); }
 
 /* Footer */
-.site-footer { background: var(--color-text); color: #d8cec8; }
+.site-footer { background: var(--color-text); color: #d0d0d0; }
 
 .footer-inner {
   max-width: 1140px;
@@ -1381,8 +1381,8 @@ img { max-width: 100%; display: block; }
 
 .footer-col .logo { color: #fff; margin-bottom: 14px; }
 .footer-col .logo span { color: var(--color-accent); }
-.footer-col p { font-size: 14px; color: #b8aca5; margin-bottom: 8px; }
-.footer-col a { color: #d8cec8; transition: color 0.2s ease; }
+.footer-col p { font-size: 14px; color: #afafaf; margin-bottom: 8px; }
+.footer-col a { color: #d0d0d0; transition: color 0.2s ease; }
 .footer-col a:hover { color: #fff; }
 
 .footer-heading {
@@ -1394,7 +1394,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 14px;
 }
 
-.hours-table td { padding: 3px 0; font-size: 14px; color: #b8aca5; }
+.hours-table td { padding: 3px 0; font-size: 14px; color: #afafaf; }
 .hours-table td:first-child { padding-right: 18px; }
 
 .footer-bottom {
@@ -1405,7 +1405,7 @@ img { max-width: 100%; display: block; }
   display: flex;
   justify-content: space-between;
   font-size: 13px;
-  color: #948880;
+  color: #8b8b8b;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -1477,7 +1477,7 @@ blockquote cite {
   }
 
   .hero { min-height: 82vh; padding-top: 80px; padding-bottom: 72px; }
-  .hero-media::after { background: linear-gradient(180deg, rgba(45, 34, 32, 0.55) 0%, rgba(45, 34, 32, 0.78) 100%); }
+  .hero-media::after { background: linear-gradient(180deg, rgba(37,37,37, 0.55) 0%, rgba(37,37,37, 0.78) 100%); }
   h1 { font-size: 42px; }
   .hero-content h1 { font-size: 44px; }
 
@@ -1564,14 +1564,14 @@ blockquote cite {
 /* ===== Dekorative Hintergrundmuster: Friseur (bewusst zurueckhaltend, gemischt aus Icons + abstrakten Formen + leiser Punktstruktur, nicht ueberall dieselbe Kachel) ===== */
 /* Basis: sehr dezente Punktstruktur statt reiner Flatcolor */
 body {
-  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2730%27%20height%3D%2730%27%20viewBox%3D%270%200%2030%2030%27%3E%3Ccircle%20cx%3D%276.6%27%20cy%3D%274.1%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2715.6%27%20cy%3D%277.9%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%278.4%27%20cy%3D%2723.2%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2727.1%27%20cy%3D%2723.8%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2730%27%20height%3D%2730%27%20viewBox%3D%270%200%2030%2030%27%3E%3Ccircle%20cx%3D%276.6%27%20cy%3D%274.1%27%20r%3D%271.3%27%20fill%3D%27%2523757575%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2715.6%27%20cy%3D%277.9%27%20r%3D%271.3%27%20fill%3D%27%2523757575%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%278.4%27%20cy%3D%2723.2%27%20r%3D%271.3%27%20fill%3D%27%2523757575%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2727.1%27%20cy%3D%2723.8%27%20r%3D%271.3%27%20fill%3D%27%2523757575%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3C%2Fsvg%3E);
   background-repeat: repeat;
   background-size: 30px 30px;
 }
 
 /* USP-Leiste: Schere + Kamm, dezent */
 .usp-bar {
-  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27200%27%20height%3D%27200%27%20viewBox%3D%270%200%20200%20200%27%3E%3Cg%20transform%3D%27translate%2844.0%2C48.0%29%20rotate%28-14%29%20scale%280.85%29%27%20fill%3D%27none%27%20stroke%3D%27%238b6f5c%27%20stroke-opacity%3D%270.14%27%20stroke-width%3D%272.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%27-9%27%20cy%3D%279%27%20r%3D%275.5%27%2F%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%275.5%27%2F%3E%3Cpath%20d%3D%27M%20-6%206%20L%2014%20-18%20M%206%206%20L%20-14%20-18%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28148.0%2C140.0%29%20rotate%2822%29%20scale%280.75%29%27%20fill%3D%27none%27%20stroke%3D%27%238b6f5c%27%20stroke-opacity%3D%270.14%27%20stroke-width%3D%272.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Crect%20x%3D%27-16%27%20y%3D%27-10%27%20width%3D%2732%27%20height%3D%274%27%20rx%3D%272%27%2F%3E%3Cline%20x1%3D%27-14%27%20y1%3D%27-6%27%20x2%3D%27-14%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%27-10%27%20y1%3D%27-6%27%20x2%3D%27-10%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%27-6%27%20y1%3D%27-6%27%20x2%3D%27-6%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%27-2%27%20y1%3D%27-6%27%20x2%3D%27-2%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%272%27%20y1%3D%27-6%27%20x2%3D%272%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%276%27%20y1%3D%27-6%27%20x2%3D%276%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%2710%27%20y1%3D%27-6%27%20x2%3D%2710%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%2714%27%20y1%3D%27-6%27%20x2%3D%2714%27%20y2%3D%274%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27200%27%20height%3D%27200%27%20viewBox%3D%270%200%20200%20200%27%3E%3Cg%20transform%3D%27translate%2844.0%2C48.0%29%20rotate%28-14%29%20scale%280.85%29%27%20fill%3D%27none%27%20stroke%3D%27%23757575%27%20stroke-opacity%3D%270.14%27%20stroke-width%3D%272.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%27-9%27%20cy%3D%279%27%20r%3D%275.5%27%2F%3E%3Ccircle%20cx%3D%279%27%20cy%3D%279%27%20r%3D%275.5%27%2F%3E%3Cpath%20d%3D%27M%20-6%206%20L%2014%20-18%20M%206%206%20L%20-14%20-18%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28148.0%2C140.0%29%20rotate%2822%29%20scale%280.75%29%27%20fill%3D%27none%27%20stroke%3D%27%23757575%27%20stroke-opacity%3D%270.14%27%20stroke-width%3D%272.2%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Crect%20x%3D%27-16%27%20y%3D%27-10%27%20width%3D%2732%27%20height%3D%274%27%20rx%3D%272%27%2F%3E%3Cline%20x1%3D%27-14%27%20y1%3D%27-6%27%20x2%3D%27-14%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%27-10%27%20y1%3D%27-6%27%20x2%3D%27-10%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%27-6%27%20y1%3D%27-6%27%20x2%3D%27-6%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%27-2%27%20y1%3D%27-6%27%20x2%3D%27-2%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%272%27%20y1%3D%27-6%27%20x2%3D%272%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%276%27%20y1%3D%27-6%27%20x2%3D%276%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%2710%27%20y1%3D%27-6%27%20x2%3D%2710%27%20y2%3D%274%27%2F%3E%3Cline%20x1%3D%2714%27%20y1%3D%27-6%27%20x2%3D%2714%27%20y2%3D%274%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
   background-repeat: repeat;
   background-size: 200px 200px;
 }
@@ -1580,7 +1580,7 @@ body {
 .process-section,
 .values-section,
 .booking-section {
-  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2730%27%20height%3D%2730%27%20viewBox%3D%270%200%2030%2030%27%3E%3Ccircle%20cx%3D%276.6%27%20cy%3D%274.1%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2715.6%27%20cy%3D%277.9%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%278.4%27%20cy%3D%2723.2%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2727.1%27%20cy%3D%2723.8%27%20r%3D%271.3%27%20fill%3D%27%25238b6f5c%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2730%27%20height%3D%2730%27%20viewBox%3D%270%200%2030%2030%27%3E%3Ccircle%20cx%3D%276.6%27%20cy%3D%274.1%27%20r%3D%271.3%27%20fill%3D%27%2523757575%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2715.6%27%20cy%3D%277.9%27%20r%3D%271.3%27%20fill%3D%27%2523757575%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%278.4%27%20cy%3D%2723.2%27%20r%3D%271.3%27%20fill%3D%27%2523757575%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2727.1%27%20cy%3D%2723.8%27%20r%3D%271.3%27%20fill%3D%27%2523757575%27%20fill-opacity%3D%270.05%27%20stroke%3D%27none%27%2F%3E%3C%2Fsvg%3E);
   background-repeat: repeat;
   background-size: 30px 30px;
 }
